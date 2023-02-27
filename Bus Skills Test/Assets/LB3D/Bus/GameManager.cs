@@ -17,6 +17,6 @@ public class GameManager : MonoBehaviour {
     private void Update()
     {
         asset.transform.eulerAngles = new Vector3(0, rotate.value * 360, 0);
-        cam.orthographicSize = zoom.value;
+        //cam.ortho = zoom.value;
     }
 }

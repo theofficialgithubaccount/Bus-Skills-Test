@@ -13,13 +13,14 @@ public class BusControl : MonoBehaviour {
     public Animator Door2;
     public Animator StopSign1;
     public Animator StopSign3;
-
+    private float opendoor;
+    private float opensign;
     public float OpenCloseSpeed;
 
     private bool isOpen = false;    
     
     public void Open(bool open = true) {
-        string action = "";
+        string action = "Space";
         if (open)
         {
             action = "Open";
@@ -43,5 +44,4 @@ public class BusControl : MonoBehaviour {
             Open(true);
         }
     }
-
 }
