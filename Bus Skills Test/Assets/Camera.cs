@@ -5,7 +5,7 @@ using UnityEngine;
 public class Camera : MonoBehaviour
 {
     public GameObject player;
-    private Vector3 offset= new Vector3(4.8f, 1, -7);
+    private Vector3 offset= new Vector3(3.1f, 6.79f, -25.56f);
     public bool keyPress = false;
     public int switcher = 0;
     // Start is called before the first frame update
@@ -23,12 +23,12 @@ public class Camera : MonoBehaviour
         }
         if (switcher == 1)
         {
-            offset = new Vector3(0, 1, 0);
+            offset = new Vector3(2.407f, 2.212f, -8.89f);
         }
         else
         {
-            offset = new Vector3(4.8f, 1, -7);
+            offset = new Vector3(3.1f, 6.79f, -25.56f);
         }
-        transform.position = player.transform.position + offset;
+        transform.position = offset;
     }
 }
